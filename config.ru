@@ -1,6 +1,4 @@
-$LOAD_PATH.unshift(File.expand_path(File.join(File.dirname(__FILE__), 'lib')))
+# This file is used by Rack-based servers to start the application.
 
-require 'bundler/setup'
-require 'application'
-
-run Application
+require ::File.expand_path('../config/environment',  __FILE__)
+run Subtwitle::Application
